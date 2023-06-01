@@ -1,14 +1,14 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: yinka_cicd
+  name: webapp
   labels:
-    app: yinka_cicd
+    app: webapp
 spec:
   ports:
     - port: 8080
       targetPort: 80
-      nodePort: 31200
+      nodePort: 31222
   selector:
-    app: yinka_cicd
+    app: webapp
   type: LoadBalancer

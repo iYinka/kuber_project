@@ -1,19 +1,19 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-   name: yinka_cicd
+   name: webapp
 spec:
    replicas: 2
    selector:      # tells the controller which pods to watch/belong to
     matchLabels:
-     app: yinka_cicd
+     app: webapp
    template:
       metadata:
         labels:
-          app: yinka_cicd
+          app: webapp
       spec:
        containers:
-        - name: yinka_cicd
+        - name: webapp
           image: iyinka/kuber_project
           imagePullPolicy: Always
           ports:
