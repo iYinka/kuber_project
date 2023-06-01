@@ -14,7 +14,7 @@ spec:
       spec:
        containers:
         - name: webapp
-          image: iyinka/kuber_project
+          image: iyinka/webapp
           imagePullPolicy: Always
           ports:
           - containerPort: 80
